@@ -1,11 +1,10 @@
 extern crate flate2;
 
-use std::io;
 use std::io::BufReader;
 use flate2::write::GzEncoder;
 use flate2::Compression;
 use std::env::args;
-use std::fs::{File, self};
+use std::fs::{File};
 use std::io::copy;
 use std::time::Instant;
 use std::process::exit;
@@ -15,11 +14,7 @@ fn show_help() {
 }
 
 fn show_info() {
-    println!("---------------------------------------------------------------");
-    println!("|                       ZI-ZU v1.0.0                          |");
-    println!("| zip and unzip tool Copyright: Amirmohammad Kazemi 2023-2024 |");
-    println!("| Project distributed Under GNU GENERAL PUBLIC LICENSE        |");
-    println!("---------------------------------------------------------------");
+    println!("ZI-ZU v1.0.0");
 }
 
 pub fn zipping(inp_file: String, target: String) {
