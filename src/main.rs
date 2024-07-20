@@ -36,7 +36,6 @@ pub fn zipping(inp_file: String, target: String) {
         );
         println!("Target len: {:?}", output.metadata().unwrap().len());
         println!("Elapsed: {:?}", start.elapsed());
-        println!("123");
 }
 
 pub fn unzip() {
